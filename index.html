@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Troll's Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="content">
+    <div id="meme-header">
+        <h1>The Troll's Website</h1>
+        <img src="img/troll-face.png" alt="meme-header" />
+    </div>
+  <h1>Meme Filter</h1>
+
+  <input type="text" id="search-input" placeholder="Search">
+  <button id="filter-button">Filter</button>
+  <nav>
+    <ul id="meme-list"></ul>
+  </nav>
+
+  <h1>Generate a Meme!</h1>
+
+  <select id="select-list" aria-label="All the memes">
+     <option value="none" selected disabled hidden>Select an Option</option>
+  </select>
+
+  <div>
+  <input type="text" id="top-text-input" placeholder="Input Top Text">
+  </div>
+
+  <div>
+  <input type="text" id="bottom-text-input" placeholder="Input Bottom Text">
+  </div>
+  <div>
+    <button id="generate-meme-button">Generate Meme!!</button>
+  </div>
+
+  <div id="image-container"></div>
+  <h1>See The Collection And Like Your Favorites!</h1>
+  <div id="meme-container"></div>
+  <div>
+    <a href="img/troll-face.png" download="mymeme" class="download-btn">Download You Meme!</a>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
