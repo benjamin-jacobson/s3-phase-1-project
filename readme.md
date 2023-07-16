@@ -1,3 +1,6 @@
+# Single Page Application: Javascript, HTML, CSS 
+- general requirements here: https://github.com/learn-co-curriculum/phase-1-javascript-project-mode
+
 ### Planning
 
 - Feature plan
@@ -26,10 +29,9 @@ Feel free to send this pitch to your instructor via slack asynchronously.
 - http://apimeme.com/?ref=apilist.fun
 - https://rapidapi.com/meme-generator-api-meme-generator-api-default/api/meme-generator
 
-- Use of getImages GET method, display 
-- Allow user to filter and view
-- Allow user to download
-- 
+- Use of getImages GET method, display
+- Initial GET of database memes created
+- POST to local database after user creates another meme.
 
 # Running the local server
 - json-server --watch db.json
