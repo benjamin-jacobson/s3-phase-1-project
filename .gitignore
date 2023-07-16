@@ -1,0 +1,5 @@
+# ignoring .env containing secrets
+*.env
+
+# Ingnoring archive
+archive/
