@@ -44,4 +44,7 @@ Feel free to send this pitch to your instructor via slack asynchronously.
 - https://www.w3docs.com/learn-html/html-select-tag.html
 - https://www.youtube.com/watch?v=cP5E0b21f_Y
 - https://open-code.tech/en/post-1424/
-- https://stackoverflow.com/questions/21518381/proper-way-to-wait-for-one-function-to-finish-before-continuing
+- https://stackoverflow.com/questions/21518381/
+- proper-way-to-wait-for-one-function-to-finish-before-continuing
+- https://www.freecodecamp.org/news/gitignore-file-how-to-ignore-files-and-folders-in-git/#ignore-file
+- https://stackoverflow.com/questions/5786851/define-a-global-variable-in-a-javascript-function
