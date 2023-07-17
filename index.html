@@ -9,30 +9,45 @@
         <h1>The Troll's Website</h1>
         <img src="img/troll-face.png" alt="meme-header" />
     </div>
-  <h1>Meme Filter</h1>
 
-  <input type="text" id="search-input" placeholder="Search">
-  <button id="filter-button">Filter</button>
-  <nav>
-    <ul id="meme-list"></ul>
-  </nav>
+    <div id="the-unstoppable-troll-container"></div>
+    <div class="flex-container">
 
-  <h1>Generate a Meme!</h1>
+      <div class="flex-child magenta">
+        <h3>You are only limited by your imagination...</h3>
 
-  <select id="select-list" aria-label="All the memes">
-     <option value="none" selected disabled hidden>Select an Option</option>
-  </select>
-
-  <div>
-  <input type="text" id="top-text-input" placeholder="Input Top Text">
-  </div>
-
-  <div>
-  <input type="text" id="bottom-text-input" placeholder="Input Bottom Text">
-  </div>
-  <div>
-    <button id="generate-meme-button">Generate Meme!!</button>
-  </div>
+        <h1>Generate a Meme!</h1>
+      
+        <select id="select-list" aria-label="All the memes">
+           <option value="none" selected disabled hidden>Select an Option</option>
+        </select>
+      
+        <div>
+        <input type="text" id="top-text-input" placeholder="Input Top Text">
+        </div>
+      
+        <div>
+        <input type="text" id="bottom-text-input" placeholder="Input Bottom Text">
+        </div>
+        <div>
+          <input type="text" id="new-memes-name" placeholder="Give The Meme A Name!">
+          </div>
+        <div>
+          <button id="generate-meme-button">Generate Meme!!</button>
+        </div>
+      </div>
+      
+      <div class="flex-child green">
+        <h1>Enter your email for a surprise...</h1>
+        <div class="container">
+          <form class="get-a-surprise">
+            <input type="text" name="name" value="" placeholder="Enter your email..." class="input-text">
+            <input type="submit" name="submit" value="Get Your Prize" class="submit">
+          </form>
+        </div>
+      </div>
+      
+    </div>
 
   <div id="image-container"></div>
   <h1>See The Collection And Like Your Favorites!</h1>
