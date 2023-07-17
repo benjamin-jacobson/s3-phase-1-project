@@ -20,10 +20,10 @@ html {
     box-shadow: 3px 4px #e04b52
   }
 
-  .toy-avatar {
+  .meme-avatar {
     justify-self: center;
     height: 12rem;
-    width: auto;
+    width: 12rem;
   }
   
   /* Add a little padding to ensure spacing is correct between content and header > nav */
@@ -80,7 +80,7 @@ nav ul{
 
 .flex-child {
   flex: 1;
-  border: 2px solid yellow;
+  border: 2px solid rgb(26, 26, 20);
 }  
 
 .flex-child:first-child {
