@@ -1,19 +1,3 @@
-# Project: Single Page Application: Javascript, HTML, CSS
-
-- General project requirements here: https://github.com/learn-co-curriculum/phase-1-javascript-project-mode
-
-# The basic story of the application
-  - A Single Page Application (SPO) that allows the user to get and generate memes. Receives a list of memes, can generate one, can like memes, and then add memes to the database and as a result the website. Add their email to an email list, and there is some "easter-egg" functionality as well.
-  
-# Running the local server, authentication
-- json-server --watch db.json
-- explorer.exe index.html
-- store api key in .env file of format (note that this is .gitignored) # TODO UPDATE
-
-# Requires and API key (follow instructions here as needed)
-- http://apimeme.com/?ref=apilist.fun
-- https://rapidapi.com/meme-generator-api-meme-generator-api-default/api/meme-generator
-
 ### Project Objective, Plan, Features & User Stories
 
 ### Project Plan
@@ -54,14 +38,3 @@
   - GET request to meme generator API to generate a meme.
   - GET request to local json database to show all existing memes already created.
   - POST request to local json database to add new meme (new record, update likes).
-
-# Resources
-- https://rapidapi.com/guides/fetch-images-with-fetch-api
-- https://rapidapi.com/meme-generator-api-meme-generator-api-default/api/meme-generator
-- https://www.w3docs.com/learn-html/html-select-tag.html
-- https://www.youtube.com/watch?v=cP5E0b21f_Y
-- https://open-code.tech/en/post-1424/
-- https://stackoverflow.com/questions/21518381/
-- proper-way-to-wait-for-one-function-to-finish-before-continuing
-- https://www.freecodecamp.org/news/gitignore-file-how-to-ignore-files-and-folders-in-git/#ignore-file
-- https://stackoverflow.com/questions/5786851/define-a-global-variable-in-a-javascript-function
