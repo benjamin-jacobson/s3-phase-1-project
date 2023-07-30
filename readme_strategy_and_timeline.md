@@ -13,6 +13,17 @@
   - Returns the generated image with user text. 
   - Adds the returned meme to the persistant data storage.
   - User can add their email to an email list, and gets a "surprise".
+  
+- **Meeting Project Requirements**
+  - The app is a HTML/CSS/JS frontend that accesses data 
+  - It uses a public API 
+  - It uses a db.json file using json-server
+  - It uses an API for
+    - get collection of at least 5 objects with each object having at least 3 attributes. 
+    - All API interations asynchronously and use JSON as the communication format. 
+  - Entire app must run on a single page. There should be NO redirects or reloads.
+  - Event listeners used (3 distint) added using JavaScript's .addEventListener() method.
+  - Use of javascript array iteration methods (map, forEach, filter, etc).
 
 - **API, Data, And Use**
   - https://rapidapi.com/meme-generator-api-meme-generator-api-default/api/meme-generator
