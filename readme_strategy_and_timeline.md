@@ -36,9 +36,7 @@
   - Protecting sensitive information.
   - Scope creep.
 
-**User Stories and API Interation**
-
-  - **User Stories**
+- **User Stories**
   - "As a new user, I want to be able to see a list of memes I can use".
   - "As a influencer, I want to be able to make memes with text, so I can get lots of likes and laughs".
   - "As a bored user, I want to be able to see memes other people have made".
