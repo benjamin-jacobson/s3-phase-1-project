@@ -6,11 +6,15 @@
   - A Single Page Application (SPO) that allows the user to get and generate memes. Receives a list of memes, can generate one, can like memes, and then add memes to the database and as a result the website. Add their email to an email list, and there is some "easter-egg" functionality as well.
   
 # Running the local server, authentication
+- Use live-server package to open index.html in VS Code
+  - allows to type module, local WSL2 file access, avoid CORS
+  - right click on file index.html, select "Open with Live Server"
 - json-server --watch db.json
 - explorer.exe index.html
 - store api key in .env file of format (note that this is .gitignored) # TODO UPDATE
 
-# Requires and API key (follow instructions here as needed)
+# Requires API key
+  Follow instructions here as needed for getting an API key
 - http://apimeme.com/?ref=apilist.fun
 - https://rapidapi.com/meme-generator-api-meme-generator-api-default/api/meme-generator
 
@@ -34,7 +38,7 @@
   - Using the generateMeme/ endpoint to get a JSON image from the API.
   - Local json-server database GET, POST and PATCH.
 
-- **Challenges you expect to face.**
+- **Challenges**
   - Persisting images without a true backend database.
   - Protecting sensitive information.
   - Scope creep.
@@ -51,6 +55,13 @@
   - GET request to local json database to show all existing memes already created.
   - POST request to local json database to add new meme (new record, update likes).
 
+
+# Useful System, Browser, WSL, or Linux Commands
+- Update security setting for chrome
+  - chrome://flags/#block-insecure-private-network-requests
+- To copy from windows 11, while in the WSL2 termina (run in linux) will copy to pwd
+  - sudo cp /mnt/c/Users/guy/Desktop/moroccan-flower.png .
+
 # Resources
 - https://rapidapi.com/guides/fetch-images-with-fetch-api
 - https://rapidapi.com/meme-generator-api-meme-generator-api-default/api/meme-generator
@@ -60,3 +71,14 @@
 - https://stackoverflow.com/questions/21518381/
 - https://www.freecodecamp.org/news/gitignore-file-how-to-ignore-files-and-folders-in-git/#ignore-file
 - https://stackoverflow.com/questions/5786851/define-a-global-variable-in-a-javascript-function
+- https://stackoverflow.com/questions/66534759/cors-error-on-request-to-localhost-dev-server-from-remote-site 
+- https://rapidapi.com/meme-generator-api-meme-generator-api-default/api/meme-generator 
+- https://github.com/benjamin-jacobson/se-phase-1-project/blob/main/readme.md 
+- https://www.freecodecamp.org/news/vscode-live-server-auto-refresh-browser/
+- https://www.youtube.com/watch?v=nx8E5BF0XuE
+- https://www.toptal.com/designers/subtlepatterns/
+- https://24ways.org/2012/how-to-make-your-site-look-half-decent/
+
+
+
+
