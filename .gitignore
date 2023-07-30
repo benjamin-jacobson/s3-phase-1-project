@@ -1,5 +1,8 @@
-# ignoring .env containing secrets
+# Ignoring .env containing secrets
 *.env
+
+# Ignoring configuration file
+config.js
 
 # Ingnoring archive
 archive/
