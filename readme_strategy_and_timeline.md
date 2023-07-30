@@ -19,10 +19,10 @@
   - It uses a public API 
   - It uses a db.json file using json-server
   - It uses an API for
-    - get collection of at least 5 objects with each object having at least 3 attributes. 
+    - Get collection of at least 5 objects with each object having at least 3 attributes. 
     - All API interations asynchronously and use JSON as the communication format. 
   - Entire app must run on a single page. There should be NO redirects or reloads.
-  - Event listeners used (3 distint) added using JavaScript's .addEventListener() method.
+  - Event listeners used (3 distinct) added using JavaScript's .addEventListener() method.
   - Use of javascript array iteration methods (map, forEach, filter, etc).
 
 - **API, Data, And Use**
