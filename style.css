@@ -4,10 +4,15 @@ html {
   }
 
   body {
-    margin: 0;
+    margin: 0 auto;
     font-family: monospace;
+    background: url(/img/moroccan-flower.png) repeat 0 0;
   }
 
+  .container-narrow {
+    max-width: 1600px;
+    margin: auto;
+  }
 
   .card {
     text-align: center;
@@ -17,7 +22,7 @@ html {
     height: 25rem;
     display: inline-grid;
     margin: 1rem 2rem;
-    box-shadow: 3px 4px #e04b52
+    box-shadow: 3px 4px #7e7ed3
   }
 
   .meme-avatar {
@@ -63,17 +68,6 @@ nav ul{
     padding: 1rem;
   }
   
-  .download-btn {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-  }
-
 .flex-container {
   display: flex;
 }
@@ -86,3 +80,11 @@ nav ul{
 .flex-child:first-child {
   margin-right: 20px;
 } 
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Corben', Georgia, Times, serif;
+}
+p, div {
+  font-family: 'Nobile', Helvetica, Arial, sans-serif;
+}
+
