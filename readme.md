@@ -3,12 +3,16 @@
 
 ### Planning
 
-- Feature plan
-- Develop user stories
-  - “As [ a user ], I want [ to perform this action ] so that
-    [ I can accomplish this goal ].”
-  - Features should not need you there to explain them to users
+- Feature Plan & User Stories
+  - “As [ a user ], I want [ to perform this action ] so that [ I can accomplish this goal ].”
+  - "As a influencer, I want to be able to make memes with text, so I can get lots of likes and laughs"
+  - "As a user, I want to be able to see memes other people have made"
+  - "As a user, I want to have my meme on the website for others to see." 
+
 - Plan out the structure of your JSON requests
+  - GET request to meme generator API to generate a meme
+  - GET request to local json database to show all existing memes already created
+  - POST request to local json database to add new meme to 
 
 ### Project Pitches
 
