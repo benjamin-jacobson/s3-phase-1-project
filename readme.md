@@ -3,7 +3,7 @@
 - General project requirements here: https://github.com/learn-co-curriculum/phase-1-javascript-project-mode
 
 # Basic Application Details
-  - A Single Page Application (SPO) that allows the user to get and generate memes. Receives a list of memes, can generate one, can like memes, and then add memes to the database and as a result the website. Add their email to an email list, and there is some "easter-egg" functionality as well.
+  - A Single Page Application (SPO) that allows the user to get and generate memes. Receives a list of memes, can generate one, can like memes, and then add memes to the database and as a result the website. Add their email to an email list.
   
 # Running the local server, authentication
 - Use live-server package to open index.html in VS Code
@@ -30,7 +30,7 @@
   - Generate meme button with user input for text at top and bottom of image.
   - Returns the generated image with user text. 
   - Adds the returned meme to the persistant data storage.
-  - User can add their email to an email list, and gets a "surprise".
+  - User can add their email to an email list.
 
 - **API, Data, And Use**
   - https://rapidapi.com/meme-generator-api-meme-generator-api-default/api/meme-generator
@@ -55,7 +55,6 @@
   - GET request to local json database to show all existing memes already created.
   - POST request to local json database to add new meme (new record, update likes).
   - PATCH request to local json database to existing meme to update likes.
-
 
 # Useful System, Browser, WSL, or Linux Commands
 - Update security setting for chrome
