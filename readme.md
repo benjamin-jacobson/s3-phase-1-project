@@ -9,7 +9,7 @@
 - Use live-server package to open index.html in VS Code
   - allows to type module, local WSL2 file access, avoid CORS
   - right click on file index.html, select "Open with Live Server"
-- json-server --watch db.json
+- json-server -p 4000 --watch db.json
 - explorer.exe index.html
 - store api key in .env file of format (note that this is .gitignored) # TODO UPDATE
 
@@ -54,13 +54,14 @@
   - GET request to meme generator API to generate a meme.
   - GET request to local json database to show all existing memes already created.
   - POST request to local json database to add new meme (new record, update likes).
+  - PATCH request to local json database to existing meme to update likes.
 
 
 # Useful System, Browser, WSL, or Linux Commands
 - Update security setting for chrome
-  - chrome://flags/#block-insecure-private-network-requests
+  - **chrome://flags/#block-insecure-private-network-requests**
 - To copy from windows 11, while in the WSL2 termina (run in linux) will copy to pwd
-  - sudo cp /mnt/c/Users/guy/Desktop/moroccan-flower.png .
+  - **sudo cp /mnt/c/Users/guy/Desktop/moroccan-flower.png .**
 
 # Resources
 - https://rapidapi.com/guides/fetch-images-with-fetch-api
@@ -78,7 +79,5 @@
 - https://www.youtube.com/watch?v=nx8E5BF0XuE
 - https://www.toptal.com/designers/subtlepatterns/
 - https://24ways.org/2012/how-to-make-your-site-look-half-decent/
-
-
-
-
+- https://kodekloud.com/blog/git-uncommit-last-commit/#
+- https://www.makeuseof.com/how-to-import-and-export-functions-in-javascript/#:~:text=In%20order%20to%20import%20multiple,by%20a%20comma%20(%2C).&text=There%20is%20another%20way%20to,exports%20in%20a%20particular%20file
