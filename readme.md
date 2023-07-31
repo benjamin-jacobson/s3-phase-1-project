@@ -11,10 +11,10 @@
   - right click on file index.html, select "Open with Live Server"
 - json-server -p 4000 --watch db.json
 - explorer.exe index.html
-- store api key in .env file of format (note that this is .gitignored) # TODO UPDATE
+- Store api key in config.js file at project root directory (note that this is .gitignored).
 
 # Requires API key
-  Follow instructions here as needed for getting an API key
+  Follow instructions here as needed for getting an API key. Need to add to config.js for site use.
 - http://apimeme.com/?ref=apilist.fun
 - https://rapidapi.com/meme-generator-api-meme-generator-api-default/api/meme-generator
 
