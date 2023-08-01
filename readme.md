@@ -1,10 +1,14 @@
 # Project: Single Page Application: Javascript, HTML, CSS
 
+![Hosted Site](https://github.com/benjamin-jacobson/se-phase-1-project/blob/main/img/Website1.JPG?raw=true)
+
 - General project requirements here: https://github.com/learn-co-curriculum/phase-1-javascript-project-mode
 
 # Basic Application Details
   - A Single Page Application (SPO) that allows the user to get and generate memes. Receives a list of memes, can generate one, can like memes, and then add memes to the database and as a result the website. Add their email to an email list.
-  
+
+![Hosted Site](https://github.com/benjamin-jacobson/se-phase-1-project/blob/main/img/Website2.JPG?raw=true)
+
 # Running the local server, authentication
 - Use live-server package to open index.html in VS Code
   - allows to type module, local WSL2 file access, avoid CORS
@@ -65,6 +69,11 @@
   - **chrome://flags/#block-insecure-private-network-requests**
 - To copy from windows 11, while in the WSL2 termina (run in linux) will copy to pwd
   - **sudo cp /mnt/c/Users/guy/Desktop/moroccan-flower.png .**
+- To kill the JSON server if hanging
+  - sudo lsof -i :4000
+    - put the appropriate port number for 4000
+  - sudo kill -9 PID
+    - Put the PID number for placeholder PID above
 
 # Resources
 - https://rapidapi.com/guides/fetch-images-with-fetch-api
