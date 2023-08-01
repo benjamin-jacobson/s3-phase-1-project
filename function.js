@@ -1,7 +1,35 @@
 import {API_KEY_MEME} from "./config.js";
 
+export function getMemeList() {
+  // Uses url, GET request to API with key, gets image list, calls updateSelectMemeList to update select list
+  const urlImageList = 'https://ronreiter-meme-generator.p.rapidapi.com/images';
+  
+  fetch(urlImageList, {
+    method: 'GET',
+    headers: {
+      'x-rapidapi-key': API_KEY_MEME,
+      "x-rapidapi-host": 'ronreiter-meme-generator.p.rapidapi.com'
+    }
+  })
+    .then(res => res.json())
+    .then(data => updateSelectMemeList(data))
+}
+
+export function updateSelectMemeList(memeObject) {
+  //This function modifies the selection list, for all possible memes
+    let selectList = document.getElementById("select-list")
+    for (let i in memeObject) {
+
+        // Creating elements, add to select element
+        let iterationText = memeObject[i];
+        let option = document.createElement("option");
+        option.text = iterationText;
+        option.value = iterationText;
+        selectList.add(option);}
+    }
+
 export function getData() {
-  // Getting json.db meme data, shows data
+  // Getting json.db meme data, runs showsData
     let url = 'http://localhost:4000/memes'
     fetch(url)
     .then(res => res.json())
@@ -42,13 +70,10 @@ export function showData(data) {
   }
 }
 
-
 export function likeAction(e){
   // Gets current like count, and call updateLikeCount to update count via PATCH
   e.preventDefault()
-  // console.log(e.target.id) // this is the id of the data
-  // console.log(`current count parent ${e.target.likesCount}`) // Need to figure this out
-  
+
   // Existing count
   let currentCount = fetch(`http://localhost:4000/memes/${e.target.id}`)
   .then(res => res.json())
@@ -56,7 +81,7 @@ export function likeAction(e){
 }
   
  export function updateLikeCount(e) {
-    // This function updates the like count in the database db.json
+    // This function updates the like count in the database db.json via PATCH
     let newData = {'likes': parseInt(`${e.likes + 1}`)}
     fetch(`http://localhost:4000/memes/${e.id}`, 
     {
@@ -65,20 +90,6 @@ export function likeAction(e){
       body: JSON.stringify(newData)
     })
   };
-
-export function updateSelectMemeList(memeObject) {
-  //This function modifies the selection list
-    let selectList = document.getElementById("select-list")
-    for (let i in memeObject) {
-
-        // Creating elements, add to select element
-        let iterationText = memeObject[i];
-        let option = document.createElement("option");
-        option.text = iterationText;
-        option.value = iterationText;
-        selectList.add(option);}
-    }
-
 
 export function createGenerateMemeUrl() {
   ///This function generates the API required URL format based on the user input
@@ -94,6 +105,7 @@ export function createGenerateMemeUrl() {
       console.log("ALERT Initiated")
       alert("Please complete selection of meme, top text, bottom text and meme name.")
   } else {
+      // Generating url for the GET request
       let url = `https://ronreiter-meme-generator.p.rapidapi.com/meme?top=${topText}&bottom=${bottomText}&meme=${memeSelected}&font_size=50&font=Impact`;
       console.log(url)
 
@@ -103,7 +115,7 @@ export function createGenerateMemeUrl() {
 }
 
 function fetchImage(memeUrl) {
-  // TODO
+  // Uses url, GET request to API with key, returns blob, calls 1. addMemeToDom and 2. converAndPostBlob
   fetch(memeUrl, {
     method: 'GET',
     headers: {
@@ -134,42 +146,6 @@ function convertAndPostBlob(input) {
 let out = readFile(input)
 }
 
-function showImage(src, width=100, height=100, alt="blah blah",angle) {
-  ```Fun show image function ```
-      let img = document.createElement("img");
-      img.src = src;
-      img.style=`transform:rotate(${angle}deg);` // not working yet
-      img.width = width;
-      img.height = height;
-      img.alt = alt;
-  
-      // This next line will add it to dom element
-      document.getElementById("the-unstoppable-troll-container").appendChild(img);
-  }
-
-export function postEmail(e) {
-  // Using the json.db server to POST user email data
-  fetch(`http://localhost:4000/emails`, 
-  {
-    method:'POST',
-    headers:{'Content-Type':'application/json'},
-    body: JSON.stringify(
-      {"email":e.name.value}
-    )
-  });
-}
-
-  function postDbMemes(newPostData) {
-    // Using the json.db server to POST to
-    fetch(`http://localhost:4000/memes`, 
-    {
-      method:'POST',
-      headers:{'Content-Type':'application/json'},
-      body: JSON.stringify(newPostData)
-    });
-}
-
-
 async function readFile(input) {
 
   let reader = new FileReader()
@@ -185,3 +161,38 @@ async function readFile(input) {
   // Posting data to database
   postDbMemes(newPostData)
 }
+
+function postDbMemes(newPostData) {
+  // Using the json.db server to POST to meme
+  fetch(`http://localhost:4000/memes`, 
+  {
+    method:'POST',
+    headers:{'Content-Type':'application/json'},
+    body: JSON.stringify(newPostData)
+  });
+}
+
+export function postEmail(e) {
+  // Using the json.db server to POST user email data
+  fetch(`http://localhost:4000/emails`, 
+  {
+    method:'POST',
+    headers:{'Content-Type':'application/json'},
+    body: JSON.stringify(
+      {"email":e.name.value}
+    )
+  });
+}
+
+// Unused functions
+function showImage(src, width=100, height=100, alt="blah blah",angle) {
+  ```Fun show image function, currently unused ```
+      let img = document.createElement("img");
+      img.src = src;
+      img.width = width;
+      img.height = height;
+      img.alt = alt;
+  
+      // This next line will add it to dom element
+      document.getElementById("the-unstoppable-troll-container").appendChild(img);
+  }
