@@ -1,6 +1,6 @@
 // Importing keys and functions
 import {API_KEY_MEME} from "./config.js";
-import {getData, showData, createGenerateMemeUrl, getMemeList ,updateSelectMemeList, postEmail} from "./function.js";
+import {getData, showData, createMemeTile, createGenerateMemeUrl, getMemeList ,updateSelectMemeList, postEmail} from "./function.js";
 
 // ---- DOM Load Event Listener
 document.addEventListener("DOMContentLoaded", () => {
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
     postEmail(event.target);
     })
 
-  // Getting local db.json data and displaying in the DOM
+  // Getting local db.json data and displaying in the DOM (memes already created)
   getData()
-
-}) // end of DOM listener
+}
+) // end of DOM listener

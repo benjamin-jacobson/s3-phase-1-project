@@ -32,11 +32,15 @@
   - Adds the returned meme to the persistant data storage.
   - User can add their email to an email list.
 
+- **Event Listeners**
+  - Three distinct listeners used: "DOMContentLoaded", "click" event, and "submit" event.
+
 - **API, Data, And Use**
-  - https://rapidapi.com/meme-generator-api-meme-generator-api-default/api/meme-generator
-  - Using the getImages/ endpoint to get a list of all images avaiable from the API.
-  - Using the generateMeme/ endpoint to get a JSON image from the API.
   - Local json-server database GET, POST and PATCH.
+  - Using third-party API GET methods
+    - The getImages/ endpoint to get a list of all images avaiable from the API.
+    - The generateMeme/ endpoint to get a JSON image from the API.
+    - https://rapidapi.com/meme-generator-api-meme-generator-api-default/api/meme-generator
 
 - **Challenges**
   - Persisting images without a true backend database.

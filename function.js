@@ -41,33 +41,42 @@ export function showData(data) {
   // EventListener on click, does likeAction function (+1) updating data and site
   let memeBox = document.getElementById('meme-container')
 
-  for (let item of data.slice().reverse()) {
-    let newDiv = document.createElement('div')
-    newDiv.classList.add("card")
+  // Using reverse of object, to show most recent
+  let allData = data.slice().reverse()
 
-    // text
-    let p = document.createElement('p')
-    p.innerText = item.name
-    newDiv.append(p)
-    // image
-    let i = document.createElement('img')
-    i.src = item.image //this is the url key
-    i.classList.add("meme-avatar")
-    newDiv.append(i)
-    // text
-    let p2 = document.createElement('p')
-    p2.innerText = `${item.likes} likes!` // number of likes
-    newDiv.append(p2)
-    // Like button
-    let p3 = document.createElement('button')
-    p3.setAttribute('likesCount', item.likes)
-    p3.id = item.id
-    p3.innerText = `Like`
-    p3.classList.add("button")
-    p3.addEventListener("click", likeAction) // likeAction event listener on click, does likeAction function
-    newDiv.append(p3)
-    memeBox.append(newDiv)
+  // Application of forEach to objects createMemeTile
+  allData.forEach(createMemeTile)
   }
+
+export function createMemeTile(item) {
+  // Function creates the meme div element with image, texts, likes,... and adds to div
+  let memeBox = document.getElementById('meme-container')
+      
+  let newDiv = document.createElement('div')
+  newDiv.classList.add("card")
+
+  // text
+  let p = document.createElement('p')
+  p.innerText = item.name
+  newDiv.append(p)
+  // image
+  let i = document.createElement('img')
+  i.src = item.image //this is the url key
+  i.classList.add("meme-avatar")
+  newDiv.append(i)
+  // text
+  let p2 = document.createElement('p')
+  p2.innerText = `${item.likes} likes!` // number of likes
+  newDiv.append(p2)
+  // Like button
+  let p3 = document.createElement('button')
+  p3.setAttribute('likesCount', item.likes)
+  p3.id = item.id
+  p3.innerText = `Like`
+  p3.classList.add("button")
+  p3.addEventListener("click", likeAction) // likeAction event listener on click, does likeAction function
+  newDiv.append(p3)
+  memeBox.append(newDiv)
 }
 
 export function likeAction(e){
