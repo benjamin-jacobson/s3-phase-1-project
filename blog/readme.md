@@ -1,4 +1,6 @@
-# A beginner’s guide: JavaScript Functions
+# A Beginner’s Guide: JavaScript Functions
+
+We will begin with an exploration of functions, and then dive into specific use cases in JavaScript for using functions:
 
 1.  Use Function Declaration
 2.  Use an Anonymous Function
@@ -11,10 +13,10 @@ Functions tend to be task-specific modules of code, that are created for a speci
 Back to the task at hand. Functions generally do something specific, with a structure 
 such as:
 
-A beginner’s guide: JavaScript Functions
-1.	Use Function Declaration
-2.	Use an Anonymous Function
-3.	Use an Arrow Functions
+1.	Doesn't need information (inputs), and does something (an output)
+2.	Needs information (inputs), and does something (an output)
+3.	Or perhaps it is a function that uses many arguments, and even other functions, with multiple outputs.
+
 
 These inputs and outputs are defined by the coder, in a display of modern creativity. Or maybe it is defined by the business and added to your sprint board. Either way, this should remind you of basic mathematics, where f(x) = 2x. It is a function with an input, that returns an output. And the function doesn’t disappear on one use but can be re-used like your favorite pair of shoes. 
 
