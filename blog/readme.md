@@ -15,4 +15,4 @@ such as:
 2.  Takes some inputs, and does something (an output)
 3.  Or perhaps it is a function that uses many arguments, and even other functions, with multiple outputs.
 
-![Hosted Site](https://github.com/benjamin-jacobson/se-phase-1-project/blob/main/docs/img/troll.png?raw=true)
+![Hosted Site](https://github.com/benjamin-jacobson/se-phase-1-project/blob/main/blog/img/troll.png?raw=true)
