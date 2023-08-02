@@ -38,7 +38,9 @@ The following examples can be ran using Replit. Replit allows for computing envi
 
 **Function Declaration**
 
-This is a standard approach to writing functions, that is similar to syntax in other programming languages.
+
+This is a standard approach to writing functions, that is similar to syntax in other programming languages. This I’d consider as the bread-and-butter option. It allows for knowledge sharing through explicit naming conventions, which is important as the codebase grows. When calling the function, we do not pass an argument for a simple ‘Hello World’ but it could as needed. This is also a good syntax for more complex code, with parameters and arguments.
+
 
 ```
 // Syntax: Function Declaration
@@ -52,7 +54,11 @@ The console output should show:
 ![Function Declaration](https://github.com/benjamin-jacobson/se-phase-1-project/blob/main/blog/img/FunctionDeclaration.JPG?raw=true)
 
 **Anonymous Function**
-This syntax does not explicitly name the function. The question is asked then, how do you use it? And also, why would you do this?
+
+This syntax does not explicitly name the function. The question is asked then, how do you use it? One approach is to assign it to an object like the one we have below. You may want to do this if it isn’t going to be used in other areas. Anonymous functions are also great to use in JavaScript’s even listeners as callback functions. 
+
+And also, why would you do this? It is simple, and if the function is not used much, then it makes sense to keep it light, and simple. 
+
 
 ```
 // Syntax: Anonymous Function
@@ -65,7 +71,8 @@ The console output should show:
 ![Function Anonymous](https://github.com/benjamin-jacobson/se-phase-1-project/blob/main/blog/img/FunctionAnonymous.JPG?raw=true)
 
 **Arrow Function**
-And we have the arrow function, even simpler.
+
+And we have the arrow function, even simpler. This syntax does not require the function keyword. It is light, and to the point, one might say, like an arrow! Since below we don’t use {} as a return statement, the ‘Hello World 3’ is implicit. Isn’t it beautiful? Similar to anonymous functions, yet even shorter syntax. The same use cases apply. 
 
 ```
 // Syntax: Arrow Function
@@ -75,3 +82,6 @@ console.log(output3());
 The console output should show:
 
 ![Function Arrow](https://github.com/benjamin-jacobson/se-phase-1-project/blob/main/blog/img/FunctionArrow.JPG?raw=true)
+
+
+And that’s a wrap! Often the different syntaxes can be used interchangeably, but use each function syntax “tool” as you see fit.
