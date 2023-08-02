@@ -75,6 +75,9 @@
   - sudo kill -9 PID
     - Put the PID number for placeholder PID above
 
+# Project Video Walkthrough
+- https://www.youtube.com/watch?v=A-lEbdV7QZw
+
 # Resources
 - https://rapidapi.com/guides/fetch-images-with-fetch-api
 - https://rapidapi.com/meme-generator-api-meme-generator-api-default/api/meme-generator
