@@ -47,5 +47,31 @@ let output = myFunction();
 console.log(output);
 ```
 
+The console output should show:
 
-![Hosted Site](https://github.com/benjamin-jacobson/se-phase-1-project/blob/main/blog/img/troll.png?raw=true)
+![Function Declaration](https://github.com/benjamin-jacobson/se-phase-1-project/blob/main/blog/img/FunctionDeclaration.JPG?raw=true)
+
+**Anonymous Function**
+This syntax does not explicitly name the function. The question is asked then, how do you use it? And also, why would you do this?
+
+```
+// Syntax: Anonymous Function
+let output2 = function () { console.log('Hello World 2')};
+output2();
+```
+
+The console output should show:
+
+![Function Anonymous](https://github.com/benjamin-jacobson/se-phase-1-project/blob/main/blog/img/FunctionAnonymous.JPG?raw=true)
+
+**Arrow Function**
+And we have the arrow function, even simpler.
+
+```
+// Syntax: Arrow Function
+let output3 = () => 'Hello World 3';
+console.log(output3());
+```
+The console output should show:
+
+![Function Arrow](https://github.com/benjamin-jacobson/se-phase-1-project/blob/main/blog/img/FunctionArrow.JPG?raw=true)
