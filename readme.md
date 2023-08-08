@@ -39,6 +39,26 @@
 - **Event Listeners**
   - Three distinct listeners used: "DOMContentLoaded", "click" event, and "submit" event.
 
+- **Functions**
+  - getMemeList
+    - Uses API URL, GET request to API with key, gets image list data, calls updateSelectMemeList.
+  - updateSelectMemeList
+    - This function modifies the selection list element, for all possible memes shown in DOM.
+  - getData
+    - Getting json.db meme data, runs showsData
+  - showData
+    - Create DOM tiles for existing database db.json memes and their data
+  - createMemeTile
+    -  Function creates the meme div element with image, texts, likes,...
+  - likeAction
+    - Gets current like count, and call updateLikeCount to update count via PATCH
+  - updateLikeCount
+    -  This function updates the like count in the database db.json via PATCH
+  - createGenerateMemeUrl
+    - This function generates the API required URL format based on the user input
+  - fetchImage
+    - Uses url, GET request to API with key, returns blob, calls 1. addMemeToDom and 2. converAndPostBlob
+
 - **API, Data, And Use**
   - Local json-server database GET, POST and PATCH.
   - Using third-party API GET methods
