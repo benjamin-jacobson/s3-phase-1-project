@@ -167,8 +167,8 @@ function postDbMemes(newPostData) {
 }
 
 export function postEmail(e) {
-
-  fetch(`http://localhost:4000/emails`, 
+  console.log("test_check this change")
+  return fetch(`http://localhost:4000/emails`, 
   {
     method:'POST',
     headers:{'Content-Type':'application/json'},

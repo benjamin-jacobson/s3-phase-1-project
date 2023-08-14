@@ -58,6 +58,16 @@
     - This function generates the API required URL format based on the user input
   - fetchImage
     - Uses url, GET request to API with key, returns blob, calls 1. addMemeToDom and 2. converAndPostBlob
+  - addMemeToDom
+    - Briefly shows the meme generated and adds 
+  - readFile
+    - uses FileReader to take blob and save as a persistent format
+  - postDbMemes
+    - Using the json.db server to POST to meme
+  - postEmail
+    - Using the json.db server to POST user email data
+  - showImage
+    - unused function for displaying images
 
 - **API, Data, And Use**
   - Local json-server database GET, POST and PATCH.
